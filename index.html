@@ -3,96 +3,165 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StartingScale - On-Premise Dialer Services</title>
+  <title>StartingScale - On-Premise Dialer Setup</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; line-height: 1.6; background-color: #f9fafb; color: #111827; }
-    header { background: white; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-    header img { height: 48px; }
-    main { padding: 2rem; max-width: 960px; margin: auto; }
-    h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
-    .highlight { color: #2563eb; font-weight: 600; }
-    section { margin-bottom: 2rem; }
-    .card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 8px rgba(0,0,0,0.06); }
-    .pricing { display: flex; gap: 1.5rem; }
-    .pricing .card { flex: 1; transition: 0.3s; }
-    .pricing .card:hover { transform: scale(1.03); }
-    footer { text-align: center; padding: 1.5rem; background: #111827; color: white; }
-    .whatsapp-btn {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: linear-gradient(to bottom right, #e0f2fe, #f9fafb);
+      color: #1a1a1a;
+      padding: 0 2rem;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 0;
+    }
+    header img {
+      height: 60px;
+    }
+    .tagline {
+      color: #2563eb;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    h1 {
+      font-size: 2.8rem;
+      color: #1e3a8a;
+      margin-bottom: 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+      padding: 2rem;
+      margin-top: 1rem;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .features ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    .features li::before {
+      content: '✔️';
+      margin-right: 0.5rem;
+      color: #2563eb;
+    }
+    .pricing {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .pricing .card {
+      flex: 1;
+      min-width: 280px;
+      background: #f0f9ff;
+    }
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #0f172a;
+    }
+    .card h4 {
+      font-size: 2rem;
+      color: #16a34a;
+      margin-bottom: 1rem;
+    }
+    .how-it-works {
+      text-align: center;
+    }
+    .whatsapp-button {
       position: fixed;
       bottom: 20px;
       right: 20px;
       background-color: #25D366;
       color: white;
       border-radius: 50%;
-      width: 56px;
-      height: 56px;
+      width: 60px;
+      height: 60px;
       display: flex;
-      align-items: center;
       justify-content: center;
-      text-decoration: none;
-      font-size: 28px;
+      align-items: center;
+      font-size: 2rem;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 999;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
     <img src="startingscale_logo.png" alt="StartingScale Logo">
-    <h2>StartingScale</h2>
+    <div class="tagline">Reliable Vicidial & Asterisk Support</div>
   </header>
-  <main>
-    <section>
-      <h1>Reliable <span class="highlight">On-Premise Dialer Setup</span></h1>
-      <p>We provide Vicidial installation & lifetime support on your local server infrastructure.</p>
-    </section>
 
-    <section class="card">
-      <h2>Features</h2>
+  <section class="hero">
+    <h1>Reliable <span style="color:#2563eb">On-Premise Dialer Setup</span></h1>
+    <p style="font-size: 1.1rem; color: #475569;">We provide Vicidial & Asterisk installation with monthly plans and lifetime support on your local server infrastructure.</p>
+  </section>
+
+  <section class="features card">
+    <h2>🔧 Features</h2>
+    <ul>
+      <li>Full Vicidial & Asterisk installation and configuration</li>
+      <li>Ongoing SIP & dialplan support</li>
+      <li>CRM Integration & Inbound Routing</li>
+      <li>Guidance on best practices and performance</li>
+      <li>Secure, scalable & customized setup</li>
+    </ul>
+  </section>
+
+  <section class="pricing">
+    <div class="card">
+      <h3>Starter Plan</h3>
+      <h4>₹2,999/month</h4>
       <ul>
-        <li>🛠️ Full Vicidial installation and configuration</li>
-        <li>💼 Lifetime support & monitoring</li>
-        <li>🧠 Guidance on best practices and performance</li>
-        <li>🔒 Secure and scalable setup</li>
+        <li>Up to 5 Agents</li>
+        <li>Basic Dialer Support</li>
+        <li>Monthly Monitoring</li>
       </ul>
-    </section>
+    </div>
+    <div class="card">
+      <h3>Growth Plan</h3>
+      <h4>₹4,999/month</h4>
+      <ul>
+        <li>Up to 10 Agents</li>
+        <li>SIP + Asterisk Config Support</li>
+        <li>CRM Integration Help</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Pro Plan</h3>
+      <h4>₹7,999+/month</h4>
+      <ul>
+        <li>20+ Agents</li>
+        <li>Custom Asterisk Solutions</li>
+        <li>Full-time Monitoring & Optimization</li>
+      </ul>
+    </div>
+  </section>
 
-    <section class="pricing">
-      <div class="card">
-        <h3>Basic Setup</h3>
-        <p>Perfect for small call centers</p>
-        <h2>₹9,999</h2>
-        <p>✔️ Vicidial Setup<br>✔️ Basic Call Routing<br>✔️ 1 Month Support</p>
-      </div>
-      <div class="card">
-        <h3>Pro Setup</h3>
-        <p>Ideal for mid-size businesses</p>
-        <h2>₹14,999</h2>
-        <p>✔️ Full Vicidial + Advanced Configs<br>✔️ CRM Integration<br>✔️ Lifetime Support</p>
-      </div>
-    </section>
+  <section class="how-it-works">
+    <h2>📞 How It Works</h2>
+    <p style="font-size: 1rem; color: #475569;">Client provides local server ➤ We install Vicidial & Asterisk ➤ We configure SIP, monitor, and provide support.</p>
+  </section>
 
-    <section class="card">
-      <h2>How It Works</h2>
-      <ol>
-        <li>📝 Contact us via WhatsApp or Email</li>
-        <li>🖥️ We access your server remotely</li>
-        <li>⚙️ We install & configure Vicidial</li>
-        <li>📞 You start calling with full support</li>
-      </ol>
-    </section>
-
-    <section class="card">
-      <h2>Contact Us</h2>
-      <p>Email: bhagatsaurabh8850@gmail.com</p>
-      <p>Phone: +91 7276011304</p>
-    </section>
-  </main>
-  <footer>
-    &copy; 2025 StartingScale. All rights reserved.
+  <footer style="margin-top: 3rem; text-align: center; font-size: 0.9rem; color: #64748b;">
+    Contact us: bhagatsaurabh8850@gmail.com | +91-7276011304
   </footer>
 
-  <a class="whatsapp-btn" href="https://wa.me/917276011304" target="_blank">💬</a>
+  <a class="whatsapp-button" href="https://wa.me/917276011304" target="_blank">💬</a>
 </body>
 </html>
