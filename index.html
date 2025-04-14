@@ -3,218 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StartingScale - On-Premise Dialer Solutions</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <title>StartingScale - On-Premise Dialer Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f7f9fc;
-      color: #222;
-      overflow-x: hidden;
-    }
-    header {
-      background: #1e3a8a;
-      color: #fff;
-      padding: 60px 20px;
-      text-align: center;
-      position: relative;
-    }
-    header h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-    .cta-btn {
-      background-color: #f4a261;
-      color: #fff;
-      padding: 14px 30px;
-      border-radius: 8px;
-      font-size: 18px;
-      text-decoration: none;
-      transition: background-color 0.3s;
-    }
-    .cta-btn:hover {
-      background-color: #e76f51;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .features, .pricing, .steps {
-      background: #fff;
-      border-radius: 12px;
-      padding: 30px;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      transition: transform 0.3s;
-    }
-    .features:hover, .pricing:hover, .steps:hover {
-      transform: scale(1.02);
-    }
-    h2 {
-      color: #1e3a8a;
-    }
-    .pricing-table {
-      display: flex;
-      justify-content: space-around;
-      margin-bottom: 30px;
-    }
-    .pricing-card {
-      background: #f1f5f8;
-      padding: 20px;
-      border-radius: 12px;
-      width: 30%;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-    .pricing-card:hover {
-      background: #e9f5fd;
-    }
-    .pricing-card h3 {
-      font-size: 20px;
-      color: #1e3a8a;
-    }
-    .pricing-card p {
-      font-size: 18px;
-      margin: 10px 0;
-    }
-    .pricing-card .btn {
-      background-color: #1e3a8a;
-      color: #fff;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 16px;
-    }
-    .pricing-card .btn:hover {
-      background-color: #0a2540;
-    }
-    .steps ul {
-      padding-left: 20px;
-    }
-    .contact {
-      text-align: center;
-    }
-    .contact a {
-      background: #1e3a8a;
-      color: #fff;
-      padding: 12px 30px;
-      border-radius: 8px;
-      font-size: 18px;
-      text-decoration: none;
-    }
-    .contact a:hover {
-      background: #0a2540;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; background-color: #f9fafb; color: #111827; }
+    header { background: white; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    header img { height: 48px; }
+    main { padding: 2rem; max-width: 960px; margin: auto; }
+    h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .highlight { color: #2563eb; font-weight: 600; }
+    section { margin-bottom: 2rem; }
+    .card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 8px rgba(0,0,0,0.06); }
+    .pricing { display: flex; gap: 1.5rem; }
+    .pricing .card { flex: 1; transition: 0.3s; }
+    .pricing .card:hover { transform: scale(1.03); }
+    footer { text-align: center; padding: 1.5rem; background: #111827; color: white; }
     .whatsapp-btn {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #25d366;
+      background-color: #25D366;
       color: white;
       border-radius: 50%;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      font-size: 24px;
-      text-align: center;
-      transition: transform 0.3s;
-    }
-    .whatsapp-btn:hover {
-      transform: scale(1.1);
-    }
-    footer {
-      background: #1e3a8a;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 28px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>StartingScale</h1>
-    <p>Your Infrastructure, Our Expertise - On-Premise Vicidial Solutions</p>
-    <a href="https://wa.me/917276011304" class="cta-btn" target="_blank">Get Started Now</a>
+    <img src="startingscale_logo.png" alt="StartingScale Logo">
+    <h2>StartingScale</h2>
   </header>
+  <main>
+    <section>
+      <h1>Reliable <span class="highlight">On-Premise Dialer Setup</span></h1>
+      <p>We provide Vicidial installation & lifetime support on your local server infrastructure.</p>
+    </section>
 
-  <section>
-    <div class="features">
-      <h2>What’s Included</h2>
+    <section class="card">
+      <h2>Features</h2>
       <ul>
-        <li>Vicidial setup on your own server</li>
-        <li>SIP/PRI dial plan configuration</li>
-        <li>Agent and campaign setup</li>
-        <li>Custom branding with your logo</li>
-        <li>CRM integration (Zoho, Vtiger, etc.)</li>
-        <li>Daily backup and security hardening</li>
-        <li>Remote support via AnyDesk</li>
+        <li>🛠️ Full Vicidial installation and configuration</li>
+        <li>💼 Lifetime support & monitoring</li>
+        <li>🧠 Guidance on best practices and performance</li>
+        <li>🔒 Secure and scalable setup</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="features">
-      <h2>Key Features</h2>
-      <ul>
-        <li>Predictive / Auto / Manual Dialing</li>
-        <li>Live Call Monitoring & Recordings</li>
-        <li>Custom Disposition Logs</li>
-        <li>CRM/API/WhatsApp Integration</li>
-        <li>Local Network & Static IP Support</li>
-        <li>Agent Dashboard + Reports</li>
-      </ul>
-    </div>
-
-    <div class="pricing">
-      <h2>Pricing</h2>
-      <div class="pricing-table">
-        <div class="pricing-card">
-          <h3>One-Time Setup</h3>
-          <p>₹9,999</p>
-          <a href="#" class="btn">Get Started</a>
-        </div>
-        <div class="pricing-card">
-          <h3>Annual Support</h3>
-          <p>₹4,999/year</p>
-          <a href="#" class="btn">Get Started</a>
-        </div>
-        <div class="pricing-card">
-          <h3>Remote Training</h3>
-          <p>₹999/session</p>
-          <a href="#" class="btn">Get Started</a>
-        </div>
+    <section class="pricing">
+      <div class="card">
+        <h3>Basic Setup</h3>
+        <p>Perfect for small call centers</p>
+        <h2>₹9,999</h2>
+        <p>✔️ Vicidial Setup<br>✔️ Basic Call Routing<br>✔️ 1 Month Support</p>
       </div>
-    </div>
+      <div class="card">
+        <h3>Pro Setup</h3>
+        <p>Ideal for mid-size businesses</p>
+        <h2>₹14,999</h2>
+        <p>✔️ Full Vicidial + Advanced Configs<br>✔️ CRM Integration<br>✔️ Lifetime Support</p>
+      </div>
+    </section>
 
-    <div class="steps">
+    <section class="card">
       <h2>How It Works</h2>
-      <ul>
-        <li>You provide the server environment</li>
-        <li>We handle installation and setup</li>
-        <li>Your agents start calling in 24 hours</li>
-        <li>We provide ongoing support remotely</li>
-      </ul>
-    </div>
+      <ol>
+        <li>📝 Contact us via WhatsApp or Email</li>
+        <li>🖥️ We access your server remotely</li>
+        <li>⚙️ We install & configure Vicidial</li>
+        <li>📞 You start calling with full support</li>
+      </ol>
+    </section>
 
-    <div class="contact">
-      <h2>Let’s Get You Started!</h2>
-      <p>Email: <a href="mailto:bhagatsaurabh8850@gmail.com">bhagatsaurabh8850@gmail.com</a></p>
-      <p>Call/WhatsApp: <a href="tel:+917276011304">+91-7276011304</a></p>
-      <a href="https://wa.me/917276011304" target="_blank" class="btn">WhatsApp Us</a>
-    </div>
-  </section>
-
+    <section class="card">
+      <h2>Contact Us</h2>
+      <p>Email: bhagatsaurabh8850@gmail.com</p>
+      <p>Phone: +91 7276011304</p>
+    </section>
+  </main>
   <footer>
-    <p>© 2025 StartingScale. All rights reserved.</p>
+    &copy; 2025 StartingScale. All rights reserved.
   </footer>
 
-  <div class="whatsapp-btn">
-    <a href="https://wa.me/917276011304" target="_blank"><i class="fab fa-whatsapp"></i></a>
-  </div>
+  <a class="whatsapp-btn" href="https://wa.me/917276011304" target="_blank">💬</a>
 </body>
 </html>
